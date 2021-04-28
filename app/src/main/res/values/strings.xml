@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NetMedsAssignment</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="deleted">Deleted</string>
+    <string name="saved">Saved Prescription</string>
+    <string name="deleteFailed">Failed to delete Prescription</string>
+    <string name="failed">Failed to save Prescription</string>
+    <string name="perDay">dosages per Day</string>
+    <string name="selectItemsFirst">Please select some items first</string>
+</resources>
