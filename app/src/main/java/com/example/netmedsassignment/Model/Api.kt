@@ -1,4 +1,4 @@
-package com.example.netmedsassignment
+package com.example.netmedsassignment.Model
 
 import retrofit2.Call
 import retrofit2.http.GET

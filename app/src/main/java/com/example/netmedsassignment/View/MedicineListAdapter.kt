@@ -1,10 +1,12 @@
-package com.example.netmedsassignment
+package com.example.netmedsassignment.View
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.netmedsassignment.MedicineListAdapter.DataViewHolder
+import com.example.netmedsassignment.Model.MedicinesData
+import com.example.netmedsassignment.R
+import com.example.netmedsassignment.View.MedicineListAdapter.DataViewHolder
 import kotlinx.android.synthetic.main.medicine_item_layout.view.*
 
 class MedicineListAdapter: RecyclerView.Adapter<DataViewHolder>() {
@@ -29,7 +31,8 @@ class MedicineListAdapter: RecyclerView.Adapter<DataViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         DataViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.medicine_item_layout, parent,
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.medicine_item_layout, parent,
                 false
             )
         )

@@ -1,9 +1,9 @@
-package com.example.netmedsassignment
+package com.example.netmedsassignment.ViewModel
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
+import com.example.netmedsassignment.Model.MedicinesData
+import com.example.netmedsassignment.Model.MedicinesRepository
 
 class MedicineViewModel : ViewModel() {
 

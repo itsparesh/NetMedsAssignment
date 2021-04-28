@@ -1,4 +1,4 @@
-package com.example.netmedsassignment;
+package com.example.netmedsassignment.Model;
 
 class Medicines {
     private long id;

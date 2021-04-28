@@ -1,4 +1,4 @@
-package com.example.netmedsassignment
+package com.example.netmedsassignment.View
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.netmedsassignment.ViewModel.MedicineViewModel
+import com.example.netmedsassignment.Model.MedicinesData
+import com.example.netmedsassignment.R
 import kotlinx.android.synthetic.main.medicines_list_fragment.*
 
 class MedicinesListFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.example.netmedsassignment
+package com.example.netmedsassignment.Model
 
 import android.content.Context
 import androidx.room.Database

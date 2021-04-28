@@ -1,4 +1,4 @@
-package com.example.netmedsassignment
+package com.example.netmedsassignment.Model
 
 import android.util.Log
 import com.google.gson.Gson

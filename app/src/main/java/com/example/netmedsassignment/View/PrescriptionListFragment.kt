@@ -1,8 +1,6 @@
-package com.example.netmedsassignment
+package com.example.netmedsassignment.View
 
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.netmedsassignment.ViewModel.MedicineViewModel
+import com.example.netmedsassignment.Model.MedicinesData
+import com.example.netmedsassignment.R
 import kotlinx.android.synthetic.main.prescription_pad_fragement.*
 
 class PrescriptionListFragment : Fragment() {

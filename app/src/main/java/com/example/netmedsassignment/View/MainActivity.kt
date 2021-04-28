@@ -1,7 +1,9 @@
-package com.example.netmedsassignment
+package com.example.netmedsassignment.View
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.netmedsassignment.Model.MedicinesData
+import com.example.netmedsassignment.R
 
 class MainActivity : AppCompatActivity() {
     private val medicinesListFragment: MedicinesListFragment = MedicinesListFragment()
@@ -15,7 +17,8 @@ class MainActivity : AppCompatActivity() {
 
     fun openMedicineListFragment() {
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragmentLayout, medicinesListFragment,
+        transaction.replace(
+            R.id.fragmentLayout, medicinesListFragment,
             MEDICINES_LIST_FRAGMENT_TAG
         )
         transaction.addToBackStack(MEDICINES_LIST_FRAGMENT_TAG)
@@ -27,7 +30,8 @@ class MainActivity : AppCompatActivity() {
         val bundle = Bundle()
         bundle.putSerializable(SELECTED_LIST, selectedMedicineList)
         prescriptionListFragment.arguments = bundle
-        transaction.replace(R.id.fragmentLayout, prescriptionListFragment,
+        transaction.replace(
+            R.id.fragmentLayout, prescriptionListFragment,
             PRESCRIPTION_LIST_FRAGMENT_TAG
         )
         transaction.addToBackStack(PRESCRIPTION_LIST_FRAGMENT_TAG)
