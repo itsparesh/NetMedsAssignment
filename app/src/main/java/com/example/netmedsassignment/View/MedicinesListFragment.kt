@@ -33,6 +33,7 @@ class MedicinesListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity).setToolbarText(getString(R.string.medicines))
         setOnClickListener()
         initializeViewModel()
         setupObserver()
@@ -42,7 +43,11 @@ class MedicinesListFragment : Fragment() {
 
     private fun setOnClickListener() {
         nextBtn?.setOnClickListener {
-            (activity as MainActivity).openPrescriptionListFragment(selectedMedicineList as ArrayList<MedicinesData>?)
+            if (medicineListAdapter?.getSelectedList().isNullOrEmpty()) {
+                Toast.makeText(activity, getString(R.string.selectItemsFirst), Toast.LENGTH_SHORT).show()
+            } else {
+                (activity as MainActivity).openPrescriptionListFragment(selectedMedicineList as ArrayList<MedicinesData>?)
+            }
         }
     }
 

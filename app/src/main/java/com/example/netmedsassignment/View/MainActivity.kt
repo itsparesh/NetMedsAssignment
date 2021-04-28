@@ -1,9 +1,13 @@
 package com.example.netmedsassignment.View
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.example.netmedsassignment.Model.MedicinesData
 import com.example.netmedsassignment.R
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     private val medicinesListFragment: MedicinesListFragment = MedicinesListFragment()
@@ -36,6 +40,10 @@ class MainActivity : AppCompatActivity() {
         )
         transaction.addToBackStack(PRESCRIPTION_LIST_FRAGMENT_TAG)
         transaction.commit()
+    }
+
+    fun setToolbarText(text: String) {
+        supportActionBar?.title = text
     }
 
     companion object {

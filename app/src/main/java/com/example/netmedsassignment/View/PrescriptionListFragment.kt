@@ -32,6 +32,7 @@ class PrescriptionListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity).setToolbarText(getString(R.string.prescription))
         initializeViewModel()
         getSavedList()
         setUpRecycleView()
